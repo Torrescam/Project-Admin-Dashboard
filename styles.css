@@ -1,0 +1,88 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #164a41;
+  color: #f8fafc;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows:repeat(3, auto);
+  grid-template-areas:
+    "sidebar header-bar header-bar"
+    "sidebar main-content main-content"
+    "sidebar main-content main-content";
+
+}
+
+.sidebar {
+  border: 1px solid red;
+  background-color: #0d2320;
+  color: #f8fafc;
+  grid-area: sidebar;
+}
+
+.header-bar {
+  border: 1px solid red;
+  background-color: #1a3c34;
+  color: #f8fafc;
+  grid-area: header-bar;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-areas:
+    "card-title card-title card-title "
+    "card card announcements"
+    "card card trending";
+}
+.card-title {
+  grid-area: card-title;
+}
+
+.card {
+  border: 1px solid red;
+  color: #fff;
+  grid-area: card;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.announcements {
+  border: 1px solid red;
+  color: #fff;
+  grid-area: announcements;
+}
+
+.trending {
+  border: 1px solid red;
+  color: #fff;
+  grid-area: trending;
+}
+
+.nav-links ul,
+.nav-links-settings ul {
+  border: 1px solid red;
+  list-style-type: none;
+  font-size: 30px;
+}
+
+.sidebar a {
+  color: #9dc88d;
+}
+
+h1,
+h2,
+h3 {
+  color: #f8fafc;
+}
+p {
+  color: #9dc88d;
+}
