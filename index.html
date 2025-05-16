@@ -10,29 +10,33 @@
 
 <body>
   <div class="container">
-    <!-- Top Brand/Header Logo -->
-    <div>
-      <h1>Dashboard</h1>
-    </div>
-
     <!-- Sidebar Navigation -->
     <nav class="sidebar">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Profile</a></li>
-        <li><a href="">Messages</a></li>
-        <li><a href="">History</a></li>
-        <li><a href="">Task</a></li>
-        <li><a href="">Communities</a></li>
-      </ul>
-      <ul>
-        <li><a href="">Setting</a></li>
-        <li><a href="">Support</a></li>
-        <li><a href="">Privacy</a></li>
-      </ul>
+      <div class="logo">
+        <h1>Dashboard</h1>
+      </div>
+
+      <div class="nav-links">
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">Profile</a></li>
+          <li><a href="">Messages</a></li>
+          <li><a href="">History</a></li>
+          <li><a href="">Task</a></li>
+          <li><a href="">Communities</a></li>
+        </ul>
+      </div>
+
+      <div class="nav-links-settings">
+        <ul>
+          <li><a href="">Setting</a></li>
+          <li><a href="">Support</a></li>
+          <li><a href="">Privacy</a></li>
+        </ul>
+      </div>
     </nav>
     <!-- Header Bar -->
-    <header class="header">
+    <header class="header-bar">
       <p>
         Hi there,
       </p>
@@ -46,10 +50,12 @@
     </header>
 
     <!-- main Dashboard area -->
-    <main>
-      <section class="card">
+    <main class="main-content">
+      <div class="card-title">
         <h2>My Projects</h2>
-
+      </div>
+      
+      <section class="card">
         <article>
           <h3>My super project</h3>
           <p>project descriptio here</p>
